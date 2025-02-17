@@ -1,8 +1,59 @@
-div{
-    border: 1px solid black;
-    padding:10px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
 }
 
-a{
-    border:1px solid black;
+body{
+    background-color: gray;
 }
+/* SELECTOR DE CLASE*/
+.caja{
+background-color:white;
+width:600px;
+/*ÚNICA FORMA DE CENTRAR UN ELEMENTO DE BLOQUE*/
+margin:40px auto;
+padding:40px;
+border-bottom:10px solid blueviolet;
+border-top: 10px solid blueviolet;
+border-left: 10px solid darkmagenta;
+border-right: 10px solid darkmagenta;
+border-radius:20px;
+border-top-right-radius:80px;
+outline:20px solid pink;
+}
+.caja h2{
+    margin-bottom:40px;
+}
+.caja p {
+    margin-bottom: 20px;
+} 
+.caja a{
+    display:block;
+    /*ESTA PROPIEDAD NO FUNCIONA EN ELEMENTOS DE LÍNEA*/
+    background-color: purple;
+    border-radius:10px;
+    padding:20px 40px;
+    /*ESTA PROPIEDAD TAMPOCO FUNCIONA EN ELEMENTOS DE LÍNEA*/
+    margin:0 auto;
+    /*PROPIEDADES TIPOGRÁFICAS*/
+    color:white;
+    text-align: center;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:all 1s;
+}
+.caja a:hover{
+    background: darkslateblue;
+    box-shadow:0px 0px 10px rgba(0,0,0,.6);
+}
+
+
+
+
+
+
+
